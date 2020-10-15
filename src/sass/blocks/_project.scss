@@ -1,0 +1,66 @@
+.project {
+    min-height: 891px;
+    background-color: #28282e;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        width: 40%;
+        margin-top: 258px;
+        margin-right: 103px;
+    }
+    &__text {
+        color: #ffffff;
+        font-family: 'Proximanova';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        padding-top: 16px;
+        margin-bottom: 72px;
+    }
+    &__view {
+        margin-top: 185px;
+    }
+    &__tabs {
+        margin-top: 81px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+    &__tab {
+        margin-right: 40px;
+        background-color: violet;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+        &:hover {
+            box-shadow: 3px 3px 20px blue;
+        }
+        &_active {
+            background-color: white;
+        }
+    
+    }
+
+    &__content {
+        width: 551px;
+        height: 444px;
+        display: none;
+        &_active {
+            display: flex;
+            
+        }
+    }
+    &__img {
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+}
+
+
+

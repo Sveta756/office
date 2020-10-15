@@ -1,1 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 @import 'libs/fonts';
+
+@import 'blocks/main';
+@import 'blocks/btn';
+@import 'blocks/services';
+@import 'blocks/title';
+@import 'blocks/line';
+@import 'blocks/works';
+@import 'blocks/project';
+@import 'blocks/read';

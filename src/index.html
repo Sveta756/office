@@ -4,15 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <section class="main">
-        <div class="main__header">
-            <div class="main__logo">
-                <img src="icon/logo.svg" alt="logo">
+        <div class="container">
+            <div class="main__header">
+                <div class="main__logo">
+                    <img src="icon/logo.svg" alt="logo">
+                </div>
+                <div class="main__logotext">
+                    we work!
+                </div>
+            </div>
+            <div class="main__block">
+                <div class="main__title">
+                    <h1>So begins a new age of knowledge</h1>
+                </div>
+                <div class="main__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae nulla quis turpis cursus pharetra. Fusce blandit nec tortor sit amet ullamcorper.
+                </div>
+                <div class="line"></div>
+                <button class="btn">
+                    PRojects
+                </button>
             </div>
         </div>
     </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="services__block">
+                <div class="title">
+                    <h2>OUR SERVICES</h2>
+                </div>
+                <div class="line line_black"></div>
+                <div class="services__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sit amet erat malesuada interdum. Aenean sodales dui quis leo fermentum scelerisque. Fusce condimentum dolor justo, ac tristique diam iaculis at.
+                </div>    
+            </div> 
+        </div>
+           <div class="services__rhombus">
+                <div class="services__onecards">
+                    <figure class="services__card">
+                        <img src="icon/Chemical_Glass.svg" alt="Chemical_Glass" class="services__img">
+                        <figcaption class="services__cardtext">Business Intelligence</figcaption> 
+                    </figure>
+                    <figure class="services__card">
+                        <img src="icon/Tools.svg" alt="Tools" class="services__img">
+                        <figcaption class="services__cardtext">CRM Customization</figcaption> 
+                    </figure>
+                    <figure class="services__card">
+                        <img src="icon/Notes.svg" alt="Notes" class="services__img">
+                        <figcaption class="services__cardtext">Project Management</figcaption> 
+                    </figure>
+            </div>
+            <div class="services__twocards">
+                <figure class="services__card">
+                    <img src="icon/Antenna.svg" alt="Antenna" class="services__img">
+                    <figcaption class="services__cardtext">Digital Marketing</figcaption> 
+                </figure>
+                <figure class="services__card">
+                    <img src="icon/Layers.svg" alt="Layers" class="services__img">
+                    <figcaption class="services__cardtext">Data Normalization</figcaption> 
+                </figure>
+                <figure class="services__card">
+                    <img src="icon/Shield.svg" alt="Shield" class="services__img">
+                    <figcaption class="services__cardtext">SEO/SEM</figcaption> 
+                </figure>
+            </div>
+            <div class="services__threecards">
+                <figure class="services__card">
+                    <img src="icon/light.svg" alt="light" class="services__img">
+                    <figcaption class="services__cardtext">Product Development</figcaption> 
+                </figure>
+                <figure class="services__card">
+                    <img src="icon/Chart.svg" alt="Chart" class="services__img">
+                    <figcaption class="services__cardtext">Data Acquisition</figcaption> 
+                </figure>
+                </div>
+           </div>
+    </section>
+    <section class="works">
+        <div class="container">
+            <div class="works__block">
+                <div class="works__title">
+                    <div class="title">
+                        <h2>Our Works</h2>
+                    </div>
+                    <div class="line line_black"></div>
+                </div>
+                <div class="works__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Aenean tincidunt sit amet at.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project">
+        <div class="container">
+            <div class="project__block">
+                <div class="project__info">
+                    <div class="title title_white">
+                        <h2>Project Title Here</h2>
+                    </div>
+                    <div class="line"></div>
+                    <div class="project__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in leo turpis. Praesent tempus felis diam, in suscipit lectus euismod et. Pellentesque habitant morbi tristique senectus fames ac turpis egestas.
+                    </div>
+                    <button class="btn">
+                        See it live
+                    </button>
+                </div>
+                <div class="project__view">
+
+                    <div class="project__content project__content_active">
+                        <div class="project__img">
+                            <img src="img/phone.png" alt="phone">
+                         </div> 
+                     </div> 
+
+                    <div class="project__content">
+                        <div class="project__img">
+                            <img src="img/iPad.png" alt="iPad">
+                         </div> 
+                     </div> 
+
+                     <div class="project__content">
+                        <div class="project__img">
+                             <img src="img/computer.png" alt="computer">
+                         </div> 
+                     </div> 
+                    
+                    
+                    <div class="tabs">
+                        <ul class="project__tabs">
+                            <li class="project__tab project__tab_active"><div><img src="icon/mob.svg"></div></li>
+                            <li class="project__tab"><div><img src="icon/tab.svg"></div></li>
+                            <li class="project__tab"><div><img src="icon/mac.svg"></div></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="read">
+        <div class="container">
+            <div class="read__header">
+                <div class="read__title">
+                    <div class="title">
+                        <h2>Read our minds</h2>
+                    </div>
+                    <div class="line line_black"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
