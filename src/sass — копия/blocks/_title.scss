@@ -1,0 +1,13 @@
+.title {
+    margin: 0;
+    color: #333333;
+    font-family: "OpenSans";
+    font-size: 53px;
+    line-height: 72px;
+    text-transform: uppercase;
+    letter-spacing: 0.53px; 
+    &_white {
+            color: #fff;
+    }
+    
+}

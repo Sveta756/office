@@ -1,0 +1,29 @@
+.services {
+    padding-bottom: 50px;
+    padding-top: 72px;
+    min-height: 760px;
+    background-color: #f6f6f6;
+    &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    }
+    &__block {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__text {
+        color: #888888;
+        font-family: 'Proximanova';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+        margin: 0;
+    }
+
+}

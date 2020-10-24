@@ -1,0 +1,44 @@
+.btn {
+    padding: 20px;
+    width: 157px;
+    height: 60px;
+    border: 2px solid #f6f6f6;
+    background: transparent;
+    color: #f6f9fa;
+    font-family: 'Proximanova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    transition: 0.3s all;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(250, 250, 250, 0.5);
+        color: #000;
+        box-shadow: 3px 3px 20px #fff;
+
+    }
+    &:active, &:focus {
+        outline: none;
+    }
+    
+}
+
+.button {
+    width: 100%;
+    padding: 54px 0;
+    background-color: #ef4035;
+    color: #ffffff;
+    font-family: "Proximanova";
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    &:hover {
+        background-color: #B22222;
+    }
+    &:active, &:focus {
+        outline: none;
+    }
+}

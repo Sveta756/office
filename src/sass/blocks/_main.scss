@@ -2,6 +2,11 @@
     background: url('../img/main.jpg') center (center/cover) no-repeat;
     min-height:  892px;
     padding-top: 51px;
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
     &__header {
         display: flex;
         justify-content: start;
@@ -19,18 +24,17 @@
         margin-top: 206px;
     }
     &__title {
+        margin: 0;
         max-width: 493px;
-        h1 {
-            color: #f6f9fa;
-            font-family: "GothamRnd-Light";
-            font-size: 48px;
-            line-height: 57px;
-            letter-spacing: 0.48px; 
-            font-weight: 300;
-        }
-        
+        color: #f6f9fa;
+        font-family: "GothamRnd-Light";
+        font-size: 48px;
+        line-height: 57px;
+        letter-spacing: 0.48px; 
+        font-weight: 300;
     }
     &__text {
+        margin: 0;
         max-width: 589px;
         margin-top: 39px;
         color: #f6f9fa;

@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
+    <title>Office</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <section class="main">
         <div class="container">
-            <div class="main__header">
-                <div class="main__logo">
-                    <img src="icon/logo.svg" alt="logo">
+            <a href="#">
+                <div class="main__header">
+                    <div class="main__logo">
+                        <img src="icon/logo.svg" alt="logo">
+                    </div>
+                    <div class="main__logotext">
+                        we work!
+                    </div>
                 </div>
-                <div class="main__logotext">
-                    we work!
-                </div>
-            </div>
+            </a>
             <div class="main__block">
-                <div class="main__title">
-                    <h1>So begins a new age of knowledge</h1>
-                </div>
-                <div class="main__text">
+                <h1 class="main__title">So begins a new age of knowledge</h1>
+                <p class="main__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae nulla quis turpis cursus pharetra. Fusce blandit nec tortor sit amet ullamcorper.
-                </div>
+                </p>
                 <div class="line"></div>
                 <button class="btn">
                     PRojects
@@ -35,69 +34,69 @@
 
     <section class="services">
         <div class="container">
-            <div class="services__block">
-                <div class="title">
-                    <h2>OUR SERVICES</h2>
+            <div class="services__wrapper">
+                <div class="services__block">
+                    <h2 class="title">OUR SERVICES</h2>
+                    <div class="line line_black"></div>
+                    <p class="services__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sit amet erat malesuada interdum. Aenean sodales dui quis leo fermentum scelerisque. Fusce condimentum dolor justo, ac tristique diam iaculis at.
+                    </p> 
+                </div>   
+               <div class="cards">
+                    <div class="cards__first">
+                        <figure class="cards__card-one cards__card_info">
+                            <img src="icon/Chemical_Glass.svg" alt="Chemical_Glass" class="cards__img">
+                            <figcaption class="cards__text-one">Business Intelligence</figcaption> 
+                        </figure>
+                        <figure class="cards__card-one cards__card_info">
+                            <img src="icon/Tools.svg" alt="Tools" class="cards__img">
+                            <figcaption class="cards__text-one">CRM Customization</figcaption> 
+                        </figure>
+                        <figure class="cards__card-one cards__card_info">
+                            <img src="icon/Notes.svg" alt="Notes" class="cards__img">
+                            <figcaption class="cards__text-one">Project Management</figcaption> 
+                        </figure>
                 </div>
-                <div class="line line_black"></div>
-                <div class="services__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sit amet erat malesuada interdum. Aenean sodales dui quis leo fermentum scelerisque. Fusce condimentum dolor justo, ac tristique diam iaculis at.
-                </div>    
-            </div> 
+                <div class="cards__third">
+                    <figure class="cards__card-one cards__card_info">
+                        <img src="icon/light.svg" alt="light" class="cards__img">
+                        <figcaption class="cards__text-one">Product Development</figcaption> 
+                    </figure>
+                    <figure class="cards__card-one cards__card_info">
+                        <img src="icon/Chart.svg" alt="Chart" class="cards__img">
+                        <figcaption class="cards__text-one">Data Acquisition</figcaption> 
+                    </figure>
+                </div>
+                <div class="cards__second">
+                    <figure class="cards__card-one cards__card_info">
+                        <img src="icon/Antenna.svg" alt="Antenna" class="cards__img">
+                        <figcaption class="cards__text-one">Digital Marketing</figcaption> 
+                    </figure>
+                    <figure class="cards__card-one cards__card_info">
+                        <img src="icon/Layers.svg" alt="Layers" class="cards__img">
+                        <figcaption class="cards__text-one">Data Normalization</figcaption> 
+                    </figure>
+                    <figure class="cards__card-one cards__card_info">
+                        <img src="icon/Shield.svg" alt="Shield" class="cards__img">
+                        <figcaption class="cards__text-one">SEO/SEM</figcaption> 
+                    </figure>
+                </div>
+               
+            </div>
+        
         </div>
-           <div class="services__rhombus">
-                <div class="services__onecards">
-                    <figure class="services__card">
-                        <img src="icon/Chemical_Glass.svg" alt="Chemical_Glass" class="services__img">
-                        <figcaption class="services__cardtext">Business Intelligence</figcaption> 
-                    </figure>
-                    <figure class="services__card">
-                        <img src="icon/Tools.svg" alt="Tools" class="services__img">
-                        <figcaption class="services__cardtext">CRM Customization</figcaption> 
-                    </figure>
-                    <figure class="services__card">
-                        <img src="icon/Notes.svg" alt="Notes" class="services__img">
-                        <figcaption class="services__cardtext">Project Management</figcaption> 
-                    </figure>
-            </div>
-            <div class="services__twocards">
-                <figure class="services__card">
-                    <img src="icon/Antenna.svg" alt="Antenna" class="services__img">
-                    <figcaption class="services__cardtext">Digital Marketing</figcaption> 
-                </figure>
-                <figure class="services__card">
-                    <img src="icon/Layers.svg" alt="Layers" class="services__img">
-                    <figcaption class="services__cardtext">Data Normalization</figcaption> 
-                </figure>
-                <figure class="services__card">
-                    <img src="icon/Shield.svg" alt="Shield" class="services__img">
-                    <figcaption class="services__cardtext">SEO/SEM</figcaption> 
-                </figure>
-            </div>
-            <div class="services__threecards">
-                <figure class="services__card">
-                    <img src="icon/light.svg" alt="light" class="services__img">
-                    <figcaption class="services__cardtext">Product Development</figcaption> 
-                </figure>
-                <figure class="services__card">
-                    <img src="icon/Chart.svg" alt="Chart" class="services__img">
-                    <figcaption class="services__cardtext">Data Acquisition</figcaption> 
-                </figure>
-                </div>
-           </div>
     </section>
+
     <section class="works">
         <div class="container">
             <div class="works__block">
                 <div class="works__title">
-                    <div class="title">
-                        <h2>Our Works</h2>
-                    </div>
+                    <h2 class="title">Our Works</h2>
                     <div class="line line_black"></div>
                 </div>
-                <div class="works__text">
+                <p class="works__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Aenean tincidunt sit amet at.
-                </div>
+                </p>
             </div>
         </div>
     </section>
@@ -105,13 +104,11 @@
         <div class="container">
             <div class="project__block">
                 <div class="project__info">
-                    <div class="title title_white">
-                        <h2>Project Title Here</h2>
-                    </div>
+                    <h2 class="title title_white">Project Title Here</h2>
                     <div class="line"></div>
-                    <div class="project__text">
+                    <p class="project__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in leo turpis. Praesent tempus felis diam, in suscipit lectus euismod et. Pellentesque habitant morbi tristique senectus fames ac turpis egestas.
-                    </div>
+                    </p>
                     <button class="btn">
                         See it live
                     </button>
@@ -139,9 +136,22 @@
                     
                     <div class="tabs">
                         <ul class="project__tabs">
-                            <li class="project__tab project__tab_active"><div><img src="icon/mob.svg"></div></li>
-                            <li class="project__tab"><div><img src="icon/tab.svg"></div></li>
-                            <li class="project__tab"><div><img src="icon/mac.svg"></div></li>
+                            <li class="project__tab project__tab_active">
+                                <svg class="project__icon" width="50" height="70">
+                                    <use xlink:href="icon/icons.svg#mobilephone"></use>
+                                </svg>
+                            </li>
+                            <li class="project__tab">
+                                <svg class="project__icon" width="50" height="70">
+                                    <use xlink:href="icon/icons.svg#ipad"></use>
+                                </svg>
+                            </li>
+                            
+                            <li class="project__tab">
+                                <svg class="project__icon" width="60" height="70">
+                                    <use xlink:href="icon/icons.svg#laptop"></use>
+                                </svg>
+                            </li>
                         </ul>
                     </div>
 
@@ -154,19 +164,201 @@
         <div class="container">
             <div class="read__header">
                 <div class="read__title">
-                    <div class="title">
-                        <h2>Read our minds</h2>
-                    </div>
+                    <h2 class="title">Read our minds</h2>
                     <div class="line line_black"></div>
+                </div>
+                <p class="read__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Phasellus aliquet purus et orci tincidunt tempus. <br>Duis ultricies, nibh
+                </p>
+            </div>
+            <div class="read__table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title & Description</th>
+                            <th>date</th>
+                            <th>who</th>
+                        </tr> 
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><h3>Weekly Digital Roundup</h3>
+                                <p>Wi-Fi apple care volume reminder controls. My stations folders mac power ultimate upgrade. Shop online quicktime trackpad server aperture rumors education safari one to one.</p>
+                            </td>
+                            <td>08/05/2014</td>
+                            <td>Adam Campbell</td>
+                        </tr>
+                        <tr>
+                            <td><h3>somthing new </h3>
+                                <p>Backlit keyboard chess phone airport extreme support iPad. Accessories magsafe terminal final cut pro. Featured TV shows downloads digital color meter. </p>
+                            </td>
+                            <td>07/05/2014</td>
+                            <td>Viktor Csuka</td>
+                        </tr>
+                        <tr>
+                            <td><h3>things coming around</h3>
+                                <p>Wi-Fi apple care volume reminder controls. My stations folders mac power ultimate upgrade. Shop online quicktime trackpad server aperture rumors education safari one to one.</p>
+                            </td>
+                            <td>05/05/2014</td>
+                            <td>vivek ravin</td>
+                        </tr>
+                        <tr>
+                            <td><h3>finally! we are here</h3>
+                                <p>Glossy tech specs bluetooth manuals. OpenGL products FaceTime free shipping recycling mission control applications.</p>
+                            </td>
+                            <td>24/04/2014</td>
+                            <td>Hikmet Arslan</td>
+                        </tr>
+                    </tbody> 
+                </table>
+                <div class="read__link">
+                    <a href="#">See all Articles here</a>
                 </div>
             </div>
         </div>
     </section>
 
+
+
+    <section class="services">
+           <div class="container">
+            <div class="services__wrapper">
+                <div class="services__block">
+                    <h2 class="title">Who are we?</h2>
+                    <div class="line line_black"></div>
+                    <p class="services__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet purus et orci tincidunt tempus. Duis ultricies, lorem sit amet hendrerit sodales, orci dolor vulputate metus.
+                    </p>    
+                </div> 
+               <div class="cards">
+                    <div class="cards__first">
+                        <figure class="cards__card">
+                            <img src="img/amanda.jpg" alt="person" class="cards__img cards__img_nopadding">
+                            <figcaption class="cards__text">
+                                <div>Amanda Green</div>
+                                Project manager
+                            </figcaption> 
+                        </figure>
+                        <figure class="cards__card">
+                            <img src="img/bob.jpg" alt="person" class="cards__img cards__img_nopadding">
+                            <figcaption class="cards__text">
+                                <div>Bob Adamson</div>
+                                Devops engineer
+                            </figcaption>
+                        </figure>
+                        <figure class="cards__card">
+                            <img src="img/charlie.jpg" alt="person" class="cards__img cards__img_nopadding">
+                            <figcaption class="cards__text">
+                                <div>Charlie Waite</div>
+                                UI Designer
+                            </figcaption>
+                        </figure>
+                </div>
+                <div class="cards__third">
+                    <figure class="cards__card">
+                        <img src="img/stive.jpg" alt="person" class="cards__img cards__img_nopadding">
+                        <figcaption class="cards__text">
+                            <div>Stive Carey</div>
+                            Data Saentist
+                        </figcaption>
+                    </figure>
+                    <figure class="cards__card">
+                        <img src="img/frank.jpg" alt="person" class="cards__img cards__img_nopadding">
+                        <figcaption class="cards__text">
+                            <div>Frank Ryder</div>
+                            Web developer
+                        </figcaption>
+                    </figure>
+                    </div>
+                    <div class="cards__second">
+                        <figure class="cards__card">
+                            <img src="img/john.jpg" alt="person" class="cards__img cards__img_nopadding">
+                            <figcaption class="cards__text">
+                                <div>John Farrell</div>
+                                Frontend developer
+                            </figcaption>
+                        </figure>
+                        <figure class="cards__card">
+                            <img src="img/mary.jpg" alt="person" class="cards__img cards__img_nopadding">
+                            <figcaption class="cards__text">
+                                <div>Marry Howard</div>
+                                Tester
+                            </figcaption>
+                        </figure>
+                        <figure class="cards__card">
+                            <img src="img/max.jpg" alt="person" class="cards__img cards__img_nopadding">
+                            <figcaption class="cards__text">
+                                <div>Max Dutton</div>
+                                Back-end developer
+                            </figcaption>
+                        </figure>
+                    </div>
+               </div>
+            </div>
+           </div>
+    </section>
+
+    <section class="vimeo">
+        <div class="contauner">
+            <h2 class="vimeo__title">Slow Life (Vimeo)</h2>
+            <p class="vimeo__text">
+                Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula eget.
+            </p>
+            <div class="vimeo__slaider">
+                <div class="vimeo__img">
+                    <img src="img/sky.jpg" alt="slide">
+                </div>
+                <div class="vimeo__img">
+                    <img src="img/stars.jpg" alt="slide">
+                </div>
+                <div class="vimeo__img">
+                    <img src="img/nebo.jpg" alt="slide">
+                </div>
+                <div class="vimeo__img">
+                    <img src="img/night.jpg" alt="slide">
+                </div>
+                <div class="vimeo__img">
+                    <img src="img/mountain.jpg" alt="slide">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <button class="button">Let’s Talk</button>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__links">
+                <a href="#" class="footer__link">© 2014 Ravin</a>
+                <a href="#" class="footer__link">contact@office.com</a>
+                <a href="#" class="footer__link">+91 9000 000 000</a>
+                <a href="#" class="footer__link">3 R.R.C street, Tamilnadu, India</a>
+            </div>
+        </div>
+        
+    </footer>
+
+   <div class="overlay">
+        <div class="modal">
+            <div class="modal__close">&times;</div> 
+            <div class="modal__title">Contact Us</div>  
+            <form class="modal__form" action="#">
+                <input name="name" type="text" placeholder="Your name">
+                <input name="phone" placeholder="Your phone">
+                <input name="email" type="email" placeholder="Your E-mail">
+                <textarea name="text" class="modal__text" placeholder="Your message..."></textarea>
+                <button class="modal__submit">Submit 🠒</button>
+            </form>
+       </div>
+   </div>
    
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
