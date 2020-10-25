@@ -35,8 +35,63 @@ $('.modal__close').on('click', function() {
   $('.overlay, .modal').fadeOut();
 });
 
-
+$('.modal__form').validate({
+  rules: {
+    name: "required",
+    phone: "required",
+    text: {
+      required: true,
+      minlength: 20
+    },
+    email: {
+      required: true,
+      email: true
+    },
+  }
+  // messages: {
+  //   name: "Пожалуйста введите свое имя",
+  //   email: {
+  //     required: "We need your email address to contact you",
+  //     email: "Your email address must be in the format of name@domain.com"
+  //   }
+  // }
 });
+
+$('input[name=phone]').mask("+7 (999) 999-99-99");
+
+$('form').submit(function(e) {
+  e.preventDefault();
+  $.ajax({
+    type: "POST",
+    url: "mailer/smart.php",
+    data: $(this).serialize()
+  }).done(function() {
+      $(this).find("input").val("");
+
+
+      $('form').trigger('reset');
+
+  });
+  return false;
+});
+
+$('.btn').mouseover( function(e) {
+  e.preventDefault();
+  $(this).addClass('btn__hover');
+});
+
+$('.btn').mouseout( function(e) {
+  e.preventDefault();
+  $(this).removeClass('btn__hover');
+});
+
+
+
+
+
+}); 
+  
+
 
 
 
