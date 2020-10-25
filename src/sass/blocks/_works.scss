@@ -5,7 +5,11 @@
         justify-content: space-between;
         align-items: flex-start;
     }
+    &__title {
+        width: 50%;
+    }
     &__text {
+        width: 50%;
         color: #888888;
         font-family: 'Proximanova';
         font-size: 18px;

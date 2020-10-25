@@ -6,8 +6,10 @@
     line-height: 72px;
     text-transform: uppercase;
     letter-spacing: 0.53px; 
+    text-align: center;
     &_white {
             color: #fff;
+            text-align: start;
     }
     
 }

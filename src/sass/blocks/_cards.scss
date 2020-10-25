@@ -1,11 +1,11 @@
 .cards {
     display: block;
     margin: 0 auto;
-    &__second { 
+    &__third { 
         margin-top: -140px; 
     }
 
-    &__third { 
+    &__second { 
         margin-top: -140px;
         margin-left: 135px; 
     }
@@ -25,15 +25,6 @@
     }
 
 
-    &__card-one {
-        transition: 0.3s all;
-        &:hover {
-            background-color: #28282e;
-            color: #ffffff;
-            cursor: pointer;
-            box-shadow: 3px 3px 20px #28282e;
-        }
-    }
     &__img {
         position: relative;
         transform: rotate(-45deg) scale(1.4);
@@ -69,14 +60,21 @@
         margin-left: 50px;
     }
 
-    
-
+    &__card-one {
+        transition: 0.3s all;
+        &:hover {
+            background-color: #28282e;
+            color: #ffffff;
+            cursor: pointer;
+            box-shadow: 3px 3px 20px #28282e;
+        }
+    }
     &__card {
         transition: 0.3s all;
+        cursor: pointer;
         &:hover {
             box-shadow: 3px 3px 20px #ef4035;
         }
-        cursor: pointer;
         &:hover .cards__text {
             display: flex;
             flex-direction: column;

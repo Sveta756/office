@@ -5,7 +5,11 @@
         margin-bottom: 66px;
 
     }
+    &__title {
+        width: 50%;
+    }
     &__text {
+        width: 50%;
         color: #888888;
         font-family: "Proximanova";
         font-size: 18px;
@@ -13,6 +17,13 @@
         line-height: 26px;
         margin-left: 140px;
     }
+    &__first-column {
+        width: 70%;
+    }
+    &__second-column, &__third-column {
+        width: 15%;
+    }
+
     &__table {
         table {
             width: 100%; 

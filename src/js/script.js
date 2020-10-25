@@ -58,7 +58,40 @@ $('.modal__form').validate({
 });
 
 $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+$('form').submit(function(e) {
+  e.preventDefault();
+  $.ajax({
+    type: "POST",
+    url: "mailer/smart.php",
+    data: $(this).serialize()
+  }).done(function() {
+      $(this).find("input").val("");
+
+
+      $('form').trigger('reset');
+
+  });
+  return false;
 });
+
+$('.btn').mouseover( function(e) {
+  e.preventDefault();
+  $(this).addClass('btn__hover');
+});
+
+$('.btn').mouseout( function(e) {
+  e.preventDefault();
+  $(this).removeClass('btn__hover');
+});
+
+
+
+
+
+}); 
+  
+
 
 
 
