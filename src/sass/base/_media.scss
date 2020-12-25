@@ -333,7 +333,7 @@
             font-size: 14px;
         }
         &__content  {
-            width: 300px;
+            width: 280px;
             height: 204px;
         }
         &__icon {
@@ -418,12 +418,19 @@
             width: 210px;
             input, textarea {
                 font-size: 12px;
+                margin-bottom: 8px;
             }
         }
         &__close {
             right: -30px;
             font-size: 40px;
             line-height: 10px;
+        }
+        label.error {
+            border: none;
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 12px;
         }
     }
 }

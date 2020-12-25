@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Office</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -12,7 +17,7 @@
             <a href="#">
                 <div class="main__header">
                     <div class="main__logo">
-                        <img src="icon/logo.svg" alt="logo">
+                        <img src="icon/logo.svg" alt="logo" class="animate__animated animate__pulse animate__infinite">
                     </div>
                     <div class="main__logotext">
                         we work!
@@ -339,17 +344,23 @@
     </footer>
 
    <div class="overlay">
-        <div class="modal">
+        <div class="modal" id="modal">
             <div class="modal__close">&times;</div> 
             <div class="modal__title">Contact Us</div>  
-            <form class="modal__form" action="#">
+            <form class="modal__form" action="#" id="form">
                 <input name="name" type="text" placeholder="Your name">
                 <input name="phone" placeholder="Your phone">
                 <input name="email" type="email" placeholder="Your E-mail">
                 <textarea name="text" class="modal__text" placeholder="Your message..."></textarea>
-                <button class="modal__submit">Submit 🠒</button>
+                <button class="modal__submit button_submit">Submit &rarr;</button>
+                <!-- Submit &rarr;</input> -->
             </form>
        </div>
+
+       <div class="modal modal_mini" id="thanks">
+        <div class="modal__close">&times;</div> 
+        <div class="modal__title">Thank you&#10084;</div>  
+        </div>
    </div>
    
 
@@ -358,6 +369,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

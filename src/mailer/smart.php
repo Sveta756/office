@@ -3,7 +3,7 @@
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
-$text = $_POST['text'];
+$message = $_POST['text'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -35,12 +35,12 @@ $mail->Body    = '
 	Имя: ' . $name . ' <br>
 	Номер телефона: ' . $phone . '<br>
 	E-mail: ' . $email . '<br>
-	Текст: ' . $text . '';
+	Текст: ' . $message . '';
 
-if(!$mail->send()) {
-    return false;
-} else {
-    return true;
-}
+	if(!$mail->send()) {
+		return false;
+	} else {
+		return true;
+	}
 
 ?>

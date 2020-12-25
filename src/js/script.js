@@ -28,11 +28,14 @@ $('ul.project__tabs').on('click', 'li:not(.project__tab_active)', function() {
 //modal 
 
 $('.button').on('click', function() {
-  $('.overlay, .modal').fadeIn();
+  $('.overlay, #modal').fadeIn();
+
 });
 
 $('.modal__close').on('click', function() {
-  $('.overlay, .modal').fadeOut();
+  $('.overlay, #modal').fadeOut();
+  $('form')[0].reset();  //сбросить значения интуп при закрытии окна
+  // $('#thanks').fadeOut();
 });
 
 $('.modal__form').validate({
@@ -41,7 +44,7 @@ $('.modal__form').validate({
     phone: "required",
     text: {
       required: true,
-      minlength: 20
+      minlength: 10
     },
     email: {
       required: true,
@@ -67,7 +70,9 @@ $('form').submit(function(e) {
     data: $(this).serialize()
   }).done(function() {
       $(this).find("input").val("");
-
+      $(this).find("textarea").val("");
+      $('#modal').fadeOut();
+      $('.overlay, #thanks').fadeIn('slow');
 
       $('form').trigger('reset');
 
@@ -86,10 +91,16 @@ $('.btn').mouseout( function(e) {
 });
 
 
+$('.btn').click(function() {
+  Swal.fire(
+    'Good job!',
+    'You clicked the button!',
+    'success'
+  );
+})
 
 
-
-}); 
+ }); 
   
 
 
