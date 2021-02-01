@@ -33,7 +33,7 @@ $('.button').on('click', function() {
 });
 
 $('.modal__close').on('click', function() {
-  $('.overlay, #modal').fadeOut();
+  $('.overlay, #modal, #thanks').fadeOut();
   $('form')[0].reset();  //сбросить значения интуп при закрытии окна
   // $('#thanks').fadeOut();
 });
@@ -63,21 +63,24 @@ $('.modal__form').validate({
 $('input[name=phone]').mask("+7 (999) 999-99-99");
 
 $('form').submit(function(e) {
-  e.preventDefault();
-  $.ajax({
-    type: "POST",
-    url: "mailer/smart.php",
-    data: $(this).serialize()
-  }).done(function() {
-      $(this).find("input").val("");
-      $(this).find("textarea").val("");
-      $('#modal').fadeOut();
-      $('.overlay, #thanks').fadeIn('slow');
-
-      $('form').trigger('reset');
-
-  });
-  return false;
+  if ($('input').val() === "") {
+    return false;
+  } else {
+    e.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function() {
+        $(this).find("input").val("");
+        $(this).find("textarea").val("");
+        $('#modal').fadeOut();
+        $('.overlay, #thanks').fadeIn('slow');
+        $('form').trigger('reset');
+    });
+    // setTimeout(function(){$('#thanks').fadeOut()},3000)
+    //     return false;
+  }       
 });
 
 $('.btn').mouseover( function(e) {

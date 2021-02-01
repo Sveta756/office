@@ -84,6 +84,9 @@
     &__view { 
         margin: 45px auto 0 auto;
     }
+    &__text {
+        text-align: center;
+    }
     }
     .title {
         font-size: 43px;
@@ -270,6 +273,9 @@
         width: 380px;
         min-height: 400px;
         padding: 18px 20px 20px 20px;
+        &_mini {
+            min-height: 144px;
+        }
         &__form {
             width: 340px;
             input, textarea {
@@ -301,6 +307,7 @@
     }
     .title {
         font-size: 30px;
+        text-align: center;
     }
     .line_black {
         margin: 0;
@@ -411,6 +418,9 @@
         width: 250px;
         min-height: 400px;
         padding: 18px 20px 20px 20px;
+        &_mini {
+            min-height: 144px;
+        }
         &__title {
             font-size: 24px;
         }
