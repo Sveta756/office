@@ -20,6 +20,8 @@ $(document).ready(function(){
       // ]
   });
 
+  //ищем ul, кликаем на li, добавляем класс активности, а у остальных табов убираем. ищем родителя __view находим у него контент, удаляем класс активности и выбираем элемент с индексом как у This и добавляем класс
+
 $('ul.project__tabs').on('click', 'li:not(.project__tab_active)', function() {
   $(this)
     .addClass('project__tab_active').siblings().removeClass('project__tab_active')
@@ -79,7 +81,7 @@ $('form').submit(function(e) {
         $('form').trigger('reset');
     });
     // setTimeout(function(){$('#thanks').fadeOut()},3000)
-    //     return false;
+        return false;
   }       
 });
 
@@ -100,7 +102,7 @@ $('.btn').click(function() {
     'You clicked the button!',
     'success'
   );
-})
+});
 
 
  }); 

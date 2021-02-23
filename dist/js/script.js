@@ -79,7 +79,7 @@ $('form').submit(function(e) {
         $('form').trigger('reset');
     });
     // setTimeout(function(){$('#thanks').fadeOut()},3000)
-    //     return false;
+        return false;
   }       
 });
 
@@ -100,7 +100,7 @@ $('.btn').click(function() {
     'You clicked the button!',
     'success'
   );
-})
+});
 
 
  }); 
